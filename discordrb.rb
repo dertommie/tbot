@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'discordrb/version'
-require 'discordrb/bot'
-require 'discordrb/commands/command_bot'
-require 'discordrb/logger'
+require_relative 'discordrb/version'
+require_relative 'discordrb/bot'
+require_relative_relative 'discordrb/commands/command_bot'
+require_relative 'discordrb/logger'
 
 # All discordrb functionality, to be extended by other files
 module Discordrb
