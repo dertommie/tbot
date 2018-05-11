@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'discordrb.rb'
+require_relative 'discordrb'
 require 'yaml'
 require 'date'
 
