@@ -4,7 +4,7 @@ require 'rest-client'
 require 'json'
 require 'time'
 
-require 'discordrb/errors'
+require_relative 'discordrb/errors'
 
 # List of methods representing endpoints in Discord's API
 module Discordrb::API
