@@ -1,9 +1,14 @@
-# frozen_string_literal: false
+GEM
+  remote: https://rubygems.org/
+  specs:
+	discordrb
 
-source "https://rubygems.org"
-ruby"2.4.3"
-# gem "rails"
+PLATFORMS
+  ruby
+  x64-mingw32
+  x86_64-linux
 
+DEPENDENCIES
 
-
-
+BUNDLED WITH
+   1.16.1
