@@ -4,15 +4,21 @@ module Help
 
   $bot.command :help do |event|
     event.respond'```Commands:
-&video - Videos
-&ball - Polandballs
-&wisdom - Englightment
-&pun - Random pun
-&cyka - Cykaa Blyaat!
-&HH - Somebody is acting weird? Call ze Gestapo!
+&ball - Polandball
 &bread - Breadfish.co.uk
+&choose - Bot will choose one from given arguments!
+&cyka - Cykaa Blyaat!
+&define - Define a word! *Will work within a week!*
+&flip/&coin - Flip a coin!
+&HH - Somebody is acting weird? Call ze Gestapo!
 &nobody - Spanish inquisition!
-&rammstein - Du hast mich!
+&ping - Check Bot latency! *doesnt work for now, bug*
+&pun - Random pun
+&qr/&qrcode - Create a QR code from given text or website!
+&urban - Urban dictionary!
+&video - Videos
+&website/&isup - Check if given website is online
+&wisdom - Englightment
 
 To report bugs DM: <@346288821115289602>
 ```
@@ -21,10 +27,11 @@ To report bugs DM: <@346288821115289602>
 
   $bot.command :video do |event|
     event.respond'```
-&vitas - Vitas
+&rammstein - Du hast mich!
 &reich - 3rd Reich anthem
-&uber - Über Alles
 &soviet - Soviet anthem
+&uber - Über Alles
+&vitas - Vitas
 &wood - Die Woodys!
 ```'
   end

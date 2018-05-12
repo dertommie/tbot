@@ -1,7 +1,9 @@
 require 'discordrb'
 require 'yaml'
 require 'date'
-
+require 'rest-client'
+require 'json'
+require 'open-uri'
 CONFIG = YAML.load_file('config.yaml')
 
 
