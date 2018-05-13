@@ -6,9 +6,6 @@ require 'json'
 require 'open-uri'
 
 
-CONFIG = YAML.load_file('config.yaml')
-
-
 
 $bot = Discordrb::Commands::CommandBot.new token: ENV['MYTOKEN'], prefix:'&', client_id: 421768323773235211, help_command: false
 
