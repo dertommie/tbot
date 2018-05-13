@@ -8,5 +8,13 @@ module Owner
     exit
   end
 
+  $bot.command :prune do |event, *args|
+    break unless event.user.id == 346288821115289602
+    var1=args.join(' ')
+    var2=var1.to_i
+    var3=var2+1
+    event.channel.prune(var3)
+  end
+
 
 end

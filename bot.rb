@@ -4,6 +4,8 @@ require 'date'
 require 'rest-client'
 require 'json'
 require 'open-uri'
+
+
 CONFIG = YAML.load_file('config.yaml')
 
 
@@ -15,6 +17,7 @@ Dir["plugins/*.rb"].each { |r|
     require_relative r
     puts "Loaded: #{r}"
 }
+
 
 $bot.run :async
 $bot.game = (CONFIG['game'])

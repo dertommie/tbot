@@ -47,8 +47,7 @@ module Misc
   end
 
   $bot.command(:ping) do |event|
-      "#{((Time.now - event.timestamp) * 1000).to_i}ms."
-    event.send_message"~~I told you its a bug, there should be a reaction time! if it is here, then you're lucky!~~"
+      event.send_message"#{((Time.now - event.timestamp) * 1000).to_i}ms."
   end
 
 
