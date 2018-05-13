@@ -5,9 +5,18 @@ module Eval
     break unless event.user.id == 346288821115289602
 
     begin
-      eval code.join(' ')
+	event.channel.send_embed do |e|
+	e.title = '**Eval**'
+      evaluated = eval code.join(' ')
+	  puts '--BEGIN EVAL--'
+	  puts evaluated.to_s
+	  puts '--END EVAL--'
+	  e.description = evaluated.to_s
+	  e.color = '00ff00'
     rescue
-      '**Error while evaluating!**'
+	
+    e.description = '**Error while evaluating!**'
+	e.color = 'FF0000'
     end
       end
     end
