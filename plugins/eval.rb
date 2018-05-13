@@ -9,9 +9,9 @@ module Eval
         e.title = '**Eval**'
       evaluated = eval code.join(' ')
 	  puts '--BEGIN EVAL--'
-	  puts evaluated.to_s
+	  puts evaluated
 	  puts '--END EVAL--'
-	  e.description = evaluated.to_s
+	  e.description = evaluated
 	  e.color = '00ff00'
     end
     rescue StandardError => f
