@@ -32,7 +32,6 @@ module Eval
       puts '--BEGIN EVAL--'
       puts evaluated
       puts '--END EVAL--'
-      event.send_message evaluated
     rescue
       '**Error while evaluating!**'
     end
