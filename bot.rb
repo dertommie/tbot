@@ -18,7 +18,20 @@ Dir["plugins/*.rb"].each { |r|
     puts "Loaded: #{r}"
 }
 
+STATUS = [
+  'mining Rubies',
+  'with Rubies',
+  'drinking blood',
+  'praising Satan',
+  'with TT',
+  'dying',
+].freeze
 
-$bot.run :async
-$bot.game = (CONFIG['game'])
-$bot.sync
+$bot.ready do |_event|
+  $bot.game = "#{STATUS.sample} | &help"
+  sleep 180
+  redo
+end
+
+puts 'Bot is ready!'
+$bot.run
