@@ -9,12 +9,11 @@ module Help
 &choose - Bot will choose one from given arguments!
 &cyka - Cykaa Blyaat!
 &define - Define a word! *Will work within a week!*
-&flip/&coin - Flip a coin!
+&coin - Flip a coin!
 &HH - Somebody is acting weird? Call ze Gestapo!
 &nobody - Spanish inquisition!
 &ping - Check Bot latency!
 &pun - Random pun
-&tr - Translate (ex. &tr en fr what? -> "quoi?")
 &qr/&qrcode - Create a QR code from given text or website!
 &urban - Urban dictionary!
 &video - Videos
