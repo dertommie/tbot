@@ -1,5 +1,7 @@
 module Eval
   extend Discordrb::Commands::CommandContainer
+  require 'discordrb'
+  require 'discordrb/webhooks'
 
   $bot.command(:eval) do |event, *code|
     break unless event.user.id == 346288821115289602
