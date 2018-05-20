@@ -8,7 +8,7 @@ module Help
 &bread - Breadfish.co.uk
 &choose - Bot will choose one from given arguments!
 &cyka - Cykaa Blyaat!
-&define - Define a word! *Will work within a week!*
+&define - Define a word!
 &coin - Flip a coin!
 &HH - Somebody is acting weird? Call ze Gestapo!
 &nobody - Spanish inquisition!

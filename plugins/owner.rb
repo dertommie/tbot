@@ -3,9 +3,14 @@ module Owner
 
   $bot.command :kill do |event|
     break unless event.user.id == 346288821115289602
-    bot.send_message(event.channel.id, 'Im shutting down!')
+    $bot.send_message(event.channel.id, 'Im shutting down!')
     sleep 3
     exit
+  end
+  
+  $bot.command :changelog do |evemt|
+  break unless event.user.id == 346288821115289602
+  $bot.send_message(event.channel.id, $changelog)
   end
 
   $bot.command :prune do |event, *args|
