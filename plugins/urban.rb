@@ -29,13 +29,9 @@ module English
     end
   end
 
-  $bot.command(:define) do |event|
-    event.send_message "I dont have the API_key yet! Wait a little longer!"
-  end
 
-
-  $bot.command(:defineinthefuture) do |event, word|
-    grabbedword = JSON.parse(RestClient.get("http://api.wordnik.com/v4/word.json/#{word}/definitions?limit=1&includeRelated=true&useCanonical=false&includeTags=false&api_key=#{CONFIG['wordnik']}"))
+  $bot.command(:define) do |event, word|
+    grabbedword = JSON.parse(RestClient.get("http://api.wordnik.com/v4/word.json/#{word}/definitions?limit=1&includeRelated=true&useCanonical=false&includeTags=false&api_key=81bb07b1c1f44e83f586742069269c7837ffb51407f376032"))
     begin
       event.channel.send_embed do |embed|
         embed.title = "Definition for #{word}"
